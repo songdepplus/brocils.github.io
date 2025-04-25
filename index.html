@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Addly - Mạng lưới kết bạn thông minh</title>
+  <style>
+    :root {
+      --main-color: #0066ff;
+      --dark-color: #0a0a23;
+      --light-bg: #f3f6fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--light-bg); color: #111;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #0066ff, #4f9eff);
+      color: white; padding: 100px 20px 60px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    header h1 {
+      font-size: 3.5em; margin: 0;
+      animation: fadein 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.2em; margin-top: 20px;
+      animation: fadein 1.5s ease-in-out;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section {
+      padding: 80px 20px; max-width: 1100px; margin: auto;
+    }
+    .section h2 {
+      font-size: 2.2em; margin-bottom: 40px; text-align: center; color: var(--dark-color);
+    }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;
+    }
+    .card {
+      background: white; border-radius: 14px; padding: 25px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px); box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+    }
+    .cta {
+      text-align: center; background: #0066ff; color: white;
+      padding: 60px 20px;
+    }
+    .cta h2 { font-size: 2.4em; }
+    .cta p { font-size: 1.1em; margin: 20px 0; }
+    .cta a {
+      background: white; color: #0066ff; padding: 14px 28px;
+      border-radius: 8px; text-decoration: none; font-weight: bold;
+      display: inline-block; margin-top: 15px;
+    }
+    footer {
+      background: var(--dark-color); color: #ccc;
+      text-align: center; padding: 40px 20px;
+    }
+    .faq .card p { font-size: 0.96em; }
+    .features .card h3 { color: var(--main-color); margin-top: 0; }
+    .logo {
+      position: absolute; top: 20px; left: 20px;
+      font-size: 1.2em; font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ADDLY<span style="color:#ffcc00;">•AI</span></div>
+  <h1>Kết nối thông minh, dẫn đầu xu hướng</h1>
+  <p>Tiện ích Chrome đầu tiên tại Việt Nam giúp bạn mở rộng mạng lưới bạn bè theo địa phương – nhanh hơn, an toàn hơn, hiệu quả hơn.</p>
+</header>
+
+<section class="section features">
+  <h2>Tính năng đột phá</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Thuật toán AI lọc đối tượng</h3>
+      <p>Phân tích và lọc bạn bè theo hành vi, vị trí, nhóm chung... giúp bạn tiếp cận đúng người.</p>
+    </div>
+    <div class="card">
+      <h3>Chế độ "an toàn ảo hóa"</h3>
+      <p>Thay đổi mô phỏng thao tác người dùng để vượt qua hệ thống kiểm duyệt mạng xã hội.</p>
+    </div>
+    <div class="card">
+      <h3>Phân đoạn chiến dịch thông minh</h3>
+      <p>Chia nhỏ chiến dịch kết bạn, cài đặt thời gian – giống như 1 trợ lý marketing thật sự.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section faq">
+  <h2>Câu hỏi thường gặp</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Phù hợp cho ai?</h3>
+      <p>Người bán hàng online, freelancer, người mới chuyển khu vực hoặc xây dựng thương hiệu cá nhân.</p>
+    </div>
+    <div class="card">
+      <h3>Addly có bị checkpoint?</h3>
+      <p>Rất hiếm! Vì Addly mô phỏng thao tác thật, kết hợp AI gián đoạn tự nhiên theo thói quen người dùng.</p>
+    </div>
+    <div class="card">
+      <h3>Sắp ra mắt khi nào?</h3>
+      <p>Tháng 5/2025 – đăng ký sớm để là người đầu tiên trải nghiệm bản BETA giới hạn!</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Sẵn sàng kết nối thông minh?</h2>
+  <p>Tham gia danh sách chờ nhận bản thử nghiệm Addly AI miễn phí đầu tiên tại Việt Nam.</p>
+  <a href="#">Đăng ký ngay</a>
+</div>
+
+<footer>
+  &copy; 2025 Addly Team — Được phát triển với tâm huyết bởi brocils.
+</footer>
+
+</body>
+</html>
